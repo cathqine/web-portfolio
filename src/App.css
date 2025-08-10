@@ -1,49 +1,81 @@
-@import "tailwindcss";
-
-@custom-variant dark (&:where(.dark, .dark *));
-
 #root {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+/* fonts */
+.onest {
+  font-family: "Onest", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.onest-bold {
+  font-family: "Onest", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
 }
 
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* underline animation */
+.hover-underline-animation {
+  display: flex;
+  position: relative;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 90%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 16px;
+  left: 13px;
+  background-color: rgb(176, 87, 155);
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+}
+
+.hover-underline-animation.left::after {
+  transform-origin: bottom right;
+}
+
+.hover-underline-animation.left:hover::after {
+  transform-origin: bottom left;
+}
+
+/* text gradient */
+.gradient-animated-text {
+  background: linear-gradient(-45deg, #2a09ff, #fb09ff, #364ee6, #81ca2d);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 5s linear infinite;
+  width: fit-content;
+  font-family: 'onest';
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
   }
 
-  to {
-    transform: rotate(360deg);
+  25% {
+    background-position: 25%;
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  50% {
+    background-position: 50%;
   }
-}
 
-.card {
-  padding: 2em;
-}
+  75% {
+    background-position: 75%;
+  }
 
-.read-the-docs {
-  color: #888;
+  100% {
+    background-position: 0% 50%;
+  }
 }
