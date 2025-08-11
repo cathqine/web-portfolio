@@ -12,10 +12,10 @@ export default function DarkModeButton() {
 
   return (
     <div className='flex flex-col justify-center mr-10'>
-      <button className={`onest-bold ${mode.darkMode} h-12 w-12 flex flex-col justify-center items-center`} onClick={() => {
+      <button className={`onest-bold ${mode.darkMode} p-2 h-12 w-12 flex flex-col justify-center items-center`} onClick={() => {
         localStorage.getItem('dark-mode') as string === 'dark' ? mode.setDarkMode('') : mode.setDarkMode('dark')
       }}>
-        {mode.darkMode === 'dark' ? <Moon /> : <Sun />}
+        {mode.darkMode === 'dark' ? <Moon size={28} color='white' className='hover:text-white' /> : <Sun size={28} color='#b6439b' />}
       </button>
     </div>
   )

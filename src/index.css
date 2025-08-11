@@ -1,7 +1,3 @@
-@import "tailwindcss";
-@custom-variant dark (&:where(.dark, .dark *));
-@plugin "tailwindcss-motion";
-
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -29,7 +25,7 @@ body {
 button {
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
+  /* padding: 0.6em 1.2em; */
   /* font-size: 1em;
   font-weight: 500; */
   font-family: inherit;
@@ -39,10 +35,11 @@ button {
 }
 
 button:hover {
-  border-color: #646cff;
+  border-color: rgb(182, 67, 155);
+  border-width: 3px;
 }
 
-button:focus,
+/* button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+} */
