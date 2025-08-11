@@ -1,6 +1,6 @@
 import DarkModeButton from "./DarkModeButton";
 import Link from "./Link";
-import Logo from "../Logo";
+import Logo from "../main/Logo";
 import { Menu } from "lucide-react";
 
 export default function Nav() {
@@ -11,7 +11,7 @@ export default function Nav() {
         <div className="md:hidden justify-center flex">
           <DarkModeButton />
         </div>
-        <div className="md:flex flex-row lg:gap-16 md:gap-12 hidden">
+        <div className="md:flex flex-row lg:gap-16 md:gap-12  hidden">
           <Link text={'Projects'} underline={true} />
           <Link text={'About'} underline={true} />
           <Link text={'Contact'} underline={true} />
@@ -19,8 +19,10 @@ export default function Nav() {
         <div className="md:flex justify-center hidden">
           <DarkModeButton />
         </div>
-        <div className="md:hidden justify-center flex flex-col pr-10">
-          <Menu />
+        <div className="justify-center items-center flex flex-col h-16 w-16">
+          <button className="md:hidden justify-center items-center flex flex-col p-2">
+            <Menu size={28} />
+          </button>
         </div>
       </div>
     </section>

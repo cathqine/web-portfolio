@@ -1,4 +1,4 @@
-import react from "../assets/react.svg";
+import react from "../../assets/react.svg";
 
 export default function Card() {
   return (
