@@ -20,7 +20,7 @@ export default function Nav() {
           <DarkModeButton />
         </div>
         <div className="justify-center items-center flex flex-col h-16 w-16">
-          <button className="md:hidden justify-center items-center flex flex-col p-2">
+          <button className="md:hidden justify-center items-center flex flex-col p-2 dark:bg-[#000000]/75">
             <Menu size={28} />
           </button>
         </div>
