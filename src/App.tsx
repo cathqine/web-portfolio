@@ -2,12 +2,11 @@ import './App.css'
 import { useState } from 'react';
 import Nav from './components/navbar/Nav';
 import { DarkModeContext } from './components/navbar/DarkModeContext';
-import Card from './components/Card';
 import Footer from './components/main/Footer';
-// import heart from './assets/heart.svg';
-import heart from './assets/pinkheart.svg';
 import filledheart from './assets/filledheart.svg';
+import heart from './assets/pinkheart.svg';
 import GradientTypewriteText from './components/main/GradientTypewriteText';
+import Card from './components/Card';
 
 function App() {
   const [darkMode, setDarkMode] = useState<string>(localStorage.getItem('dark-mode')!);
@@ -15,9 +14,15 @@ function App() {
     <DarkModeContext.Provider value={{ darkMode, setDarkMode }}>
       <div className={`${darkMode}`}> {/* toggles between dark and light mode */}
         <Nav />
-        <section id='full-screen' className='w-screen h-[100vh] pt-30 pl-20 dark:text-white bg-radial-[at_200%_75%] dark:bg-radial-[at_300%_400%] dark:from-[#d800ca] dark:to-black from-[#c4269a] to-white p-8 pt-24'>
+        <section id='full-screen' className='w-screen h-100% pt-30 pl-20 dark:text-white bg-radial-[at_200%_75%] dark:bg-radial-[at_300%_400%] dark:from-[#d800ca] dark:to-black from-[#c4269a] to-white p-8 pt-24'>
           <section id="intro" className=''>
-            <p className="onest-bold text-2xl">👋 Hi! My name is Catherine.</p>
+            <p className="onest-bold text-2xl">👋 Hi! My name is Catherine
+              {darkMode ?
+                <img alt='pulsing heart' src={heart} width={23} className='mb-[0.2rem] ml-[0.3rem] motion-preset-pulse-sm inline-block hover:motion-paused' />
+                :
+                <img alt='pulsing heart' src={filledheart} width={23} className='mb-[0.25rem] ml-[0.1rem] motion-preset-pulse-sm inline-block hover:motion-paused' />
+              }
+            </p>
             <GradientTypewriteText />
           </section>
 
@@ -73,10 +78,17 @@ function App() {
                 </p>
               </p>
             </div>
-            {/* <Card /> */}
-            <p className='text-2xl onest-bold text-red-400'>
-              todo - projects cards section (including this one as a project)
-            </p>
+
+            <section id="projects" className=''>
+              <div className='flex flex-row justify-end mr-10'>
+                <h1 className='text-6xl onest-bold bg-clip-text text-transparent inline-block bg-gradient-to-r from-violet-600 to-pink-600'>
+                  Projects
+                </h1>
+              </div>
+              <Card />
+              <Card />
+              <Card />
+            </section>
           </section>
 
           <Footer />

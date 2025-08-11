@@ -21,6 +21,18 @@
   font-weight: 500;
 }
 
+.onest-bolder {
+  font-family: "Onest", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+}
+
+.onest-boldest {
+  font-family: "Onest", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+}
+
 /* underline animation */
 .hover-underline-animation {
   display: flex;
