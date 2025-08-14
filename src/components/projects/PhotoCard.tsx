@@ -1,14 +1,11 @@
 interface PhotoCardProps {
-  leftval: string,
-  rightval: string,
   hidden: string,
+  isLeft: boolean,
 }
 
-export default function PhotoCard({ leftval, rightval, hidden }: PhotoCardProps) {
-  // const [h, w] = dimensions; // h-80, w-80
-
+export default function PhotoCard({ hidden, isLeft }: PhotoCardProps) {
   return (
-    <div className={`h-75 w-75 lg:w-100 md:h-80 md:w-80 ml-10 border-1 rounded-t-2xl md:rounded-2xl ${hidden} ${leftval} ${rightval}`}>
+    <div className={`h-75 w-75 lg:w-90 md:h-90 md:w-75 sm:w-140 border-1 rounded-t-2xl ${hidden} ${isLeft ? 'rounded-t-2xl md:rounded-tl-2xl md:rounded-tr-none md:rounded-bl-2xl' : 'rounded-t-2xl md:rounded-tr-2xl md:rounded-tl-none md:rounded-br-2xl'}`}>
       <img src="" />
     </div>
   );
