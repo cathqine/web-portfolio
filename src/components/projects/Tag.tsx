@@ -29,7 +29,7 @@ export default function Tag({ tag, /*colour*/ }: TagProps) {
   } */
 
   return (
-    <div className={`lexend-light w-fit p-[0.3rem] text-[${tagTextColour}] text-sm bg-[${tagColour}] border-1 rounded-3xl ml-2`}>
+    <div className={`lexend w-fit p-[0.35rem] text-[${tagTextColour}] text-[0.85rem] sm:text-sm bg-[${tagColour}] border-1 rounded-3xl sm:ml-2`}>
       {tag}
     </div>
   );

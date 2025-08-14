@@ -2,7 +2,6 @@ import DarkModeButton from "./DarkModeButton";
 import Link from "./Link";
 import Logo from "../main/Logo";
 import { Menu } from "lucide-react";
-import SocialMedia from "../main/SocialMedia";
 
 export default function Nav() {
   return (
@@ -16,7 +15,7 @@ export default function Nav() {
         <div className="sm:flex flex-row lg:gap-16 md:gap-12 sm:gap-8 hidden">
           <Link text={'Projects'} underline={true} href='#projects' />
           <Link text={'About'} underline={true} href='#about' />
-          <SocialMedia />
+          <Link text={'Blogs'} underline={true} href='#blogs' />
         </div>
 
         <div id="dark-mode" className="sm:flex justify-center hidden">
