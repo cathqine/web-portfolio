@@ -54,6 +54,11 @@
   font-weight: 700;
 }
 
+.text-outline {
+  -webkit-text-stroke: 0.17rem;
+  -webkit-text-fill-color: white;
+}
+
 /* underline animation */
 .hover-underline-animation {
   display: flex;
