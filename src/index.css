@@ -4,6 +4,7 @@
   font-weight: 400;
 
   /* color-scheme: dark light; */
+  scroll-behavior: smooth;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

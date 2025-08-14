@@ -2,9 +2,9 @@ import { TypeAnimation } from "react-type-animation";
 
 export default function GradientTypewriteText() {
   return (
-    <div className="flex flex-col justify-center h-62 md:h-fit">
+    <div className="flex flex-col justify-center h-80 md:h-fit pt-10">
       <div className='flex flex-row'>
-        <span className='pt-6 text-6xl inline-block onest'>{`>`}&nbsp;</span>
+        <span className='sm:text-7xl text-6xl inline-block onest-bold'>{`>`}&nbsp;</span>
         <TypeAnimation
           sequence={[
             'Casual academic @UNSW',
@@ -22,10 +22,10 @@ export default function GradientTypewriteText() {
           cursor={false} // text gradient clips out cursor
           repeat={Infinity}
           deletionSpeed={60}
-          className='pt-6 text-6xl bg-gradient-to-r dark:from-pink-500 dark:to-violet-500 from-pink-500 to-violet-500 bg-clip-text text-transparent inline-block'
+          className='h-outline sm:text-7xl text-6xl bg-gradient-to-r dark:from-pink-500 dark:to-violet-500 from-pink-500 to-violet-500 bg-clip-text text-transparent inline-block'
           style={{ whiteSpace: 'pre-line' }}
         />
-        <div id="cursor-blink" className="invisible xl:visible motion-preset-blink motion-duration-1500 text-6xl pt-6 onest">
+        <div id="cursor-blink" className="invisible xl:visible motion-preset-blink motion-duration-1500 sm:text-7xl text-6xl onest">
           |
         </div>
       </div>

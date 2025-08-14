@@ -8,6 +8,34 @@
 }
 
 /* fonts */
+.lexend {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.onest-lightest {
+  font-family: "Onest", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.onest-lighter {
+  font-family: "Onest", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.onest-light {
+  font-family: "Onest", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
 .onest {
   font-family: "Onest", sans-serif;
   font-optical-sizing: auto;
@@ -19,6 +47,23 @@
   font-family: "Onest", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
+}
+
+.onest-bolder {
+  font-family: "Onest", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+}
+
+.onest-boldest {
+  font-family: "Onest", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+}
+
+.text-outline {
+  -webkit-text-stroke: 0.17rem;
+  -webkit-text-fill-color: white;
 }
 
 /* underline animation */
