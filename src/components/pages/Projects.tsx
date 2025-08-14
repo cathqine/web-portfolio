@@ -2,7 +2,7 @@ import ProjectCard from "../projects/ProjectCard";
 
 export default function Projects() {
   return (
-    <section id="projects-section" className=''>
+    <section id="projects" className='scroll-mt-25'>
       <div className='flex flex-row justify-end pr-10 mb-12'>
         <span className='text-8xl md:onest-bold onest-lightest bg-clip-text text-transparent inline-block h-30 bg-gradient-to-r from-violet-600 to-pink-600'>
           Projects

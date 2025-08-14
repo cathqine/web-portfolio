@@ -22,7 +22,6 @@ function App() {
 
           <section id="content" className='pt-10 pl-8 flex flex-col'>
             <Intro />
-            <div id='projects' className='h-30'></div> {/* invisible div for perfect scroll */}
             <Projects />
           </section>
 
