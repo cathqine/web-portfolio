@@ -16,6 +16,7 @@ export default function CardDesc({ title, caption, status, techstack, isRight }:
   // const inProgress = ['WIP', 'Archived']; // orange
 
   const [type, /*setType*/] = useState<string>('blue');
+  const sepCaption = caption.split('\n');
 
   return (
     <div className={`lexend dark:bg-gradient-to-b dark:from-[#4b044c] dark:to-[#0f0136] h-fit rounded-b-2xl w-75 2xl:w-250 xl:w-200 lg:w-150 md:h-90 md:w-110 sm:w-140 border-1 ${isRight ? 'md:rounded-tr-2xl md:rounded-br-2xl md:rounded-bl-none' : 'md:rounded-tl-2xl md:rounded-bl-2xl md:rounded-br-none'} flex flex-col justify-center p-10`}>
@@ -33,11 +34,16 @@ export default function CardDesc({ title, caption, status, techstack, isRight }:
 
       <div className="flex flex-col mb-8 sm:pt-5">
         <span className="lexend sm:text-3xl text-4xl">{title}</span>
-        <span className="p-2 pl-0 lexend-thin sm:text-xl text-base">{caption}</span>
+        {/* captions */}
+        {sepCaption?.map((caption: string) => {
+          return (
+            <div className="p-2 pl-0 onest sm:text-lg text-base">{caption}</div>
+          );
+        })}
       </div>
 
       {techstack.length != 0 ? // rmv empty space if list is empty
-        <div id="tech-stack" className="flex flex-col mb-10">
+        <div id="tech-stack" className="flex flex-col md:mb-2 sm:mb-8">
           <div className="flex flex-row items-center mt-3">
             <span className="hidden sm:block sm:min-w-fit sm: onest-bolder sm:text-lg">Tech stack</span>
             <div className="ml-2 grid grid-cols-2 gap-4 place-items-center sm:flex sm:flex-row overflow-y-auto">
