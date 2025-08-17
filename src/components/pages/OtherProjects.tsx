@@ -17,7 +17,7 @@ export default function ArchivedProjects() {
             techstack={[]} />
           <ProjectCard index={4}
             title={"Website Portfolio"}
-            caption={"The website you are currently viewing! Made to showcase my projects & work. Will be making updates to projects & blogs."}
+            caption={"The website you are currently viewing! Made to showcase my projects & work. Future updates will be made to blogs & new projects."}
             status={["WIP"]}
             techstack={["React", "TypeScript", "TailwindCSS"]} />
         </div>
