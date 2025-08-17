@@ -7,7 +7,9 @@ import GradientTypewriteText from './components/main/GradientTypewriteText';
 import Intro from './components/pages/Intro';
 import Projects from './components/pages/Projects';
 import Tagline from './components/main/Tagline';
-import ArchivedProjects from './components/pages/OtherProjects';
+import ArchivedProjects from './components/pages/ArchivedProjects';
+import Experiences from './components/pages/Experiences';
+import CurrentProjects from './components/pages/CurrentProjects';
 
 function App() {
   const [darkMode, setDarkMode] = useState<string>(localStorage.getItem('dark-mode')!);
@@ -24,9 +26,10 @@ function App() {
           <section id="content" className='pt-10 pl-8 flex flex-col'>
             <Intro />
             <Projects />
+            <CurrentProjects />
             <ArchivedProjects />
+            <Experiences />
           </section>
-
           <Footer />
         </section>
       </div>
