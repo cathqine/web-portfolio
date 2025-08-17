@@ -36,21 +36,25 @@ export default function CardDesc({ title, caption, status, techstack, isRight }:
         <span className="p-2 pl-0 lexend-thin sm:text-xl text-base">{caption}</span>
       </div>
 
-      <div id="tech-stack" className="flex flex-col mb-10">
-        <div className="flex flex-row items-center mt-3">
-          <span className="hidden sm:block sm:min-w-fit sm: onest-bolder sm:text-lg">Tech stack</span>
-          <div className="ml-2 grid grid-cols-2 gap-4 place-items-center sm:flex sm:flex-row overflow-y-auto">
-            {techstack?.map((tag: string) => {
-              // if (frontend.includes(tag)) setType('blue')
-              // else if (stage.includes(tag)) setType('green')
-              // else if (inProgress.includes(tag)) setType('orange')
-              return (
-                <Tag tag={tag} colour={type} />
-              );
-            })}
+      {techstack.length != 0 ? // rmv empty space if list is empty
+        <div id="tech-stack" className="flex flex-col mb-10">
+          <div className="flex flex-row items-center mt-3">
+            <span className="hidden sm:block sm:min-w-fit sm: onest-bolder sm:text-lg">Tech stack</span>
+            <div className="ml-2 grid grid-cols-2 gap-4 place-items-center sm:flex sm:flex-row overflow-y-auto">
+              {techstack?.map((tag: string) => {
+                // if (frontend.includes(tag)) setType('blue')
+                // else if (stage.includes(tag)) setType('green')
+                // else if (inProgress.includes(tag)) setType('orange')
+                return (
+                  <Tag tag={tag} colour={type} />
+                );
+              })}
+            </div>
           </div>
         </div>
-      </div>
+        :
+        <></>
+      }
 
       <section id='status-desktop' className="hidden sm:flex sm:flex-row items-center justify-end -mr-5 pb-2 sm:pb-0 sm:mr-0">
         <div className="ml-2 sm:flex sm:flex-row items-center overflow-y-auto">
