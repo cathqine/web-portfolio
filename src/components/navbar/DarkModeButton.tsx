@@ -7,7 +7,8 @@ export default function DarkModeButton() {
   const mode = useContext(DarkModeContext); // {darkMode, setDarkMode}
 
   useEffect(() => {
-    localStorage.setItem('dark-mode', mode.darkMode);
+    if (mode.darkMode !== null) localStorage.setItem('dark-mode', mode.darkMode); // toggles
+    else window.matchMedia("(prefers-color-scheme: dark)").matches ? mode.setDarkMode('dark') : mode.setDarkMode('light'); // system preferences
   }, [mode.darkMode]);
 
   return (

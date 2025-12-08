@@ -18,7 +18,7 @@ export default function CurrentProjects() {
           techstack={[]} />
         <ProjectCard src={port} index={4}
           title={"Website Portfolio"}
-          caption={"The mobile-responsive website you are currently viewing! Made to showcase my projects & work.\nTODO's: light/dark mode, animations, creatives, missing projects."}
+          caption={"The mobile-responsive website you are currently viewing! Made to showcase my projects & work.\nTODO's: light/dark mode, animations, creatives, missing projects, more mobile responsiveness."}
           status={["WIP"]}
           techstack={["React", "TypeScript", "TailwindCSS"]} />
       </div>
