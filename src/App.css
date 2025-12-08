@@ -3,6 +3,23 @@
 @plugin "tailwindcss-motion";
 @custom-variant hover (&:hover);
 
+
+* {
+  background-color: rgb(245, 206, 230);
+}
+
+div,
+section,
+p,
+span,
+img,
+a,
+button,
+svg,
+footer {
+  background-color: transparent;
+}
+
 #root {
   max-width: 1280px;
 }
