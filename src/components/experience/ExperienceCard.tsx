@@ -14,6 +14,7 @@ export default function ExperienceCard({ logo, caption, duration }: ExperienceCa
       <div className="w-70 md:w-140 p-5 rounded-2xl grid col-2 text-center h-fit bg-white/20 mb-8 items-center justify-center">
         <span title="role" className="font-bold">{caption.split('\n')[0]}</span>
         <span title="details" className="font-light">{caption.split('\n')[1]}</span>
+        <span title="details" className="font-light">{caption.split('\n')[2]}</span> {/* is this problematic? */}
       </div>
       <div className="w-70 font-light md:w-75 ml-8 p-5 rounded-2xl text-center h-fit bg-white/20 mb-8 items-center justify-center">
         {duration}

@@ -23,8 +23,8 @@ export default function Experiences() {
       </div>
       {/* negative margin left negates the screen's padding left */}
       <div className="flex justify-center items-center flex-col sm:-ml-20 -ml-8 lexend mb-8">
-        <ExperienceCard logo={cse} alt={'logo of UNSW CSE'} caption={'UNSW Casual Academic (CSE Tutor)\n COMP4920 - Professional Issues and Ethics - 24T3, 25T1, 25T3'} duration={'September 2024—Present'} />
-        <ExperienceCard logo={cse} alt={'logo of UNSW CSE'} caption={'UNSW Casual Academic (CSE Tutor)\n COMP3511 - Human Computer Interaction - 25T2'} duration={'April 2025—August 2025'} />
+        <ExperienceCard logo={cse} alt={'logo of UNSW CSE'} caption={'CSE Academic Tutor @UNSW\n COMP4920 - Professional Issues and Ethics - 24T3, 25T1, 25T3\n COMP3511 - Human Computer Interaction - 25T2'} duration={'September 2024—Present'} />
+        {/* <ExperienceCard logo={cse} alt={'logo of UNSW CSE'} caption={'UNSW Casual Academic (CSE Tutor)\n COMP3511 - Human Computer Interaction - 25T2'} duration={'April 2025—August 2025'} /> */}
         <ExperienceCard logo={xylo} alt={'logo of Xylo Bio'} caption={'Digital Design, Collateral, and Administrative Intern @Xylo'} duration={'June 2023—August 2023'} />
         <ExperienceCard logo={miniso} alt={'logo of Miniso'} caption={'Retail Sales Assistant @Miniso'} duration={'October 2022—January 2024'} />
       </div>
