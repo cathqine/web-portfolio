@@ -10,6 +10,7 @@ import Tagline from './components/main/Tagline';
 import ArchivedProjects from './components/pages/ArchivedProjects';
 import Experiences from './components/pages/Experiences';
 import CurrentProjects from './components/pages/CurrentProjects';
+import Background from './components/pages/Background';
 
 function App() {
   const [darkMode, setDarkMode] = useState<string>(localStorage.getItem('dark-mode')!);
@@ -29,6 +30,7 @@ function App() {
             <CurrentProjects />
             <ArchivedProjects />
             <Experiences />
+            <Background />
           </section>
           <Footer />
         </section>
