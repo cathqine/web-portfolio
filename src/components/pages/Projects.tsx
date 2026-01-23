@@ -1,4 +1,5 @@
 import ProjectCard from "../projects/ProjectCard";
+import capstone from '../../assets/capstone.png'
 
 export default function Projects() {
   return (
@@ -17,7 +18,7 @@ export default function Projects() {
       </div>
       {/* negative margin left negates the screen's padding left */}
       <div className="flex justify-center items-center flex-col sm:-ml-20 lexend">
-        <ProjectCard index={1} src={''}
+        <ProjectCard index={1} src={capstone}
           title={"eCOM Dashboard"}
           caption={"An ESG dashboard app assisting corporations & investors in exploring, monitoring and reporting ESG metrics. \nMade as part of COMP3900's 24T3 capstone project."}
           status={["Completed"]}
