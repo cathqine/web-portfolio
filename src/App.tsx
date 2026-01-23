@@ -27,7 +27,6 @@ function App() {
           <section id="content" className='pt-10 pl-8 flex flex-col'>
             <Intro />
             <Projects />
-            <CurrentProjects />
             <ArchivedProjects />
             <Experiences />
             <Background />

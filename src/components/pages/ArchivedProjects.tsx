@@ -14,16 +14,21 @@ export default function ArchivedProjects() {
         </div>
       </div>
       <div className="flex justify-center items-center flex-col sm:-ml-20 lexend">
+        <ProjectCard index={2} src={''}
+          title={"Electus"}
+          caption={"• A voting tool for UNSW society held AGMs. \nMade as part of DevSoc's 25T1 Training Program."}
+          status={["Completed"]}
+          techstack={["React", "NodeJS", "TypeScript", "TailwindCSS"]} />
         <ProjectCard index={5}
           title={"Workout Timer"}
           src={workoutimer}
-          caption={"Project idea inspired from when I was working out.\nAccessible via Github cathqine/workout-timer."}
+          caption={"• Project idea inspired from workouts.\nAccessible via Github cathqine/workout-timer."}
           status={["Archived"]}
           techstack={["React", "TypeScript", "TailwindCSS"]} />
         <ProjectCard index={6}
           title={"Willow Quizzes"}
           src={willowquizzes}
-          caption={"Discontinued from its initial phase. Made as part of the publications' personal projects initiative.\nAccessible via Github cathqine/willow-quizzes."}
+          caption={"• Discontinued from its initial phase.\n• Made as part of the publications' personal projects initiative.\nAccessible via Github cathqine/willow-quizzes."}
           status={["Archived"]}
           techstack={["React", "JavaScript", "MUI"]} />
       </div>
