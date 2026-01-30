@@ -1,9 +1,24 @@
 import { TypeAnimation } from 'react-type-animation';
 import pfp from '../../assets/pfp.png';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function Background() {
   const [hovered, setHovered] = useState<boolean>(false);
+
+  useEffect(() => {
+    // Check hash on mount
+    const checkLocation = () => {
+      if (window.location.hash === '#background') setHovered(true);
+    };
+
+    // Listen for hash changes
+    window.addEventListener('hashchange', checkLocation);
+
+    // Cleanup
+    return () => {
+      window.removeEventListener('hashchange', checkLocation);
+    };
+  }, [])
 
   const startTyping = () => {
     if (!hovered) setHovered(true);

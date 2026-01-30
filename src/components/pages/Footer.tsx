@@ -10,7 +10,8 @@ export default function Footer() {
       <hr />
       <div className='m-4 -mb-3 flex flex-row justify-end gap-8'>
         <Link text={'Projects'} underline={false} href='#projects' />
-        <Link text={'Experiences'} underline={false} href='#about' />
+        <Link text={'Experiences'} underline={false} href='#experiences' />
+        <Link text={'Background'} underline={false} href='#background' />
         <Link text={'Creatives'} underline={false} href='#creatives' />
         <SocialMedia />
       </div>

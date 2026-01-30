@@ -8,7 +8,7 @@ import miniso from '../../assets/miniso_logo.png';
 export default function Experiences() {
   return (
 
-    <section id="about" className='scroll-mt-25'>
+    <section id="experiences" className='scroll-mt-25'>
       <div className='flex flex-row justify-end sm:pr-10 mb-12 ml-78'>
         {/* ml-78 on line 6 for mobile responsiveness */}
         <span className="text-6xl md:text-8xl mr-1 md:onest-bold onest-lightest bg-clip-text text-transparent inline-block h-30 bg-gradient-to-r from-pink-600 to-violet-600 ">✨</span>

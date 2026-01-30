@@ -33,7 +33,7 @@ function App() {
           <Footer />
         </section>
       </div>
-    </DarkModeContext.Provider >
+    </DarkModeContext.Provider>
   )
 }
 
