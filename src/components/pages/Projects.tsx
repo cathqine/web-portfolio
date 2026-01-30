@@ -15,7 +15,7 @@ export default function Projects() {
         </div>
       </div>
       <div className="text-center -ml-6">
-        <div className='text-5xl onest-lighter max-w-full bg-clip-text text-transparent inline-block h-30 bg-gradient-to-r from-violet-600 to-pink-600'>
+        <div className='text-5xl onest-light max-w-full bg-clip-text text-transparent inline-block h-30 bg-gradient-to-r from-violet-600 to-pink-600'>
           Featured Projects
         </div>
       </div>

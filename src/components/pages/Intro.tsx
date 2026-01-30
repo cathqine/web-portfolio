@@ -52,10 +52,10 @@ export default function IntroContent() {
             </p>
             &
             <p className='text-outline bg-gradient-to-r dark:to-violet-500 dark:from-pink-500 bg-clip-text text-transparent inline-block'>
-              &nbsp;product design&nbsp;
+              &nbsp;UX/UI design.
             </p>
             <p className='md:pt-0 pt-5'>
-              {`>`} I also like to spend time making <p className='text-outline bg-gradient-to-r dark:to-violet-500 dark:via-indigo-400 dark:from-sky-400 bg-clip-text text-transparent inline-block'>illustrations</p> and writing <p className='text-outline bg-gradient-to-r dark:to-violet-500 dark:from-pink-500 bg-clip-text text-transparent inline-block'>prose & poetry.</p>
+              {`>`} I also like creating <p className='text-outline bg-gradient-to-r dark:to-violet-500 dark:via-indigo-400 dark:from-sky-400 bg-clip-text text-transparent inline-block'>artworks</p> and writing <p className='text-outline bg-gradient-to-r dark:to-violet-500 dark:from-pink-500 bg-clip-text text-transparent inline-block'>prose & poetry.</p>
             </p>
           </p>
           : <p className='onest-bold text-lg pb-16 pt-10'>
@@ -70,9 +70,9 @@ export default function IntroContent() {
               &nbsp;product design&nbsp;
             </p>
             <p className='md:pt-0 pt-5'>
-              {`>`} I also like to spend time making
+              {`>`} I also like creating
               <p className="bg-clip-text text-transparent inline-block bg-gradient-to-r from-pink-500 to-violet-500">
-                &nbsp;illustrations&nbsp;
+                &nbsp;artworks&nbsp;
               </p>
               and writing
               <p className="bg-clip-text text-transparent inline-block bg-gradient-to-r from-pink-500 to-violet-500">

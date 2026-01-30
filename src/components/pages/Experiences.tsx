@@ -17,7 +17,7 @@ export default function Experiences() {
         </div>
       </div>
       <div className="ml-30">
-        <div className='text-5xl onest-lighter max-w-full bg-clip-text text-transparent inline-block h-16 mb-10 bg-gradient-to-r from-violet-600 to-pink-600'>
+        <div className='text-5xl onest-light max-w-full bg-clip-text text-transparent inline-block h-16 mb-10 bg-gradient-to-r from-violet-600 to-pink-600'>
           Work experience
         </div>
       </div>
@@ -29,7 +29,7 @@ export default function Experiences() {
         <ExperienceCard logo={miniso} alt={'logo of Miniso'} caption={'Retail Sales Assistant @Miniso'} duration={'October 2022—January 2024'} />
       </div>
       <div className="ml-30 mb-4">
-        <div className='text-5xl onest-lighter max-w-full bg-clip-text text-transparent inline-block h-fit mb-10 bg-gradient-to-r from-violet-600 to-pink-600'>
+        <div className='text-5xl onest-light max-w-full bg-clip-text text-transparent inline-block h-fit mb-10 bg-gradient-to-r from-violet-600 to-pink-600'>
           Education
         </div>
       </div>
