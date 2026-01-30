@@ -1,6 +1,6 @@
-import ProjectCard from "../projects/ProjectCard";
-import bbd from '../../assets/bbd.png';
-import port from '../../assets/portweb.png';
+// import ProjectCard from "../projects/ProjectCard";
+// import bbd from '../../assets/bbd.png';
+// import port from '../../assets/portweb.png';
 
 export default function CurrentProjects() {
   return (
