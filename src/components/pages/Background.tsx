@@ -64,7 +64,7 @@ export default function Background() {
                     <span className='font-bold'>{'>'}&nbsp;</span>
                     <TypeAnimation sequence={[
                       8000,
-                      "Since then, I've fallen in love with programming. Learning how to code opened up a whole new exciting world for me; a space where creativity and software come together, where I create exceptional user experience in my softwares."
+                      "Since then, I've fallen in love with programming. Learning how to code opened up a whole new exciting world for me; a space where creativity and software come together, a place where I create projects with exceptional user experience."
                     ]}
                       cursor={true}
                       speed={40}

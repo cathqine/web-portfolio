@@ -2,6 +2,7 @@ import ProjectCard from "../projects/ProjectCard";
 import workoutimer from '../../assets/workout-timer.jpg';
 import willowquizzes from '../../assets/willow-quizzes-1.jpg';
 import electus from '../../assets/electus.jpg';
+import lovelink from '../../assets/love_link.png';
 
 export default function ArchivedProjects() {
   return (
@@ -15,18 +16,23 @@ export default function ArchivedProjects() {
         </div>
       </div>
       <div className="flex justify-center items-center flex-col sm:-ml-20 lexend">
-        <ProjectCard index={2} src={electus}
+        <ProjectCard index={1} src={electus}
           title={"Electus"}
-          caption={"• A voting tool for UNSW society held AGMs. \nMade as part of DevSoc's 25T1 Training Program."}
+          caption={"•	An AGM voting tool designed for UNSW societies to host their AGMs, incorporating UNSW Arc procedures. \nMade as part of DevSoc's 25T1 Training Program."}
           status={["Completed"]}
-          techstack={["React", "NodeJS", "TypeScript", "TailwindCSS"]} />
-        <ProjectCard index={5}
+          techstack={["React", "NodeJS", "Express", "TypeScript", "TailwindCSS"]} />
+        <ProjectCard src={lovelink} index={2}
+          title={"Love Link"}
+          caption={"• A singles facilitator web application designed for singles to find love from attending in-person group dates/events. \n• Features include user/host dashboards, events search and compatibility quizzes.\nMade as part of DevSoc's 25T2 Training Program."}
+          status={["WIP"]}
+          techstack={["React", "TypeScript", "TailwindCSS", "Express", "NodeJS", "MongoDB"]} />
+        <ProjectCard index={3}
           title={"Workout Timer"}
           src={workoutimer}
           caption={"• Project idea inspired from workouts.\nAccessible via Github cathqine/workout-timer."}
           status={["Archived"]}
           techstack={["React", "TypeScript", "TailwindCSS"]} />
-        <ProjectCard index={6}
+        <ProjectCard index={4}
           title={"Willow Quizzes"}
           src={willowquizzes}
           caption={"• Discontinued from its initial phase.\n• Made as part of the publications' personal projects initiative.\nAccessible via Github cathqine/willow-quizzes."}

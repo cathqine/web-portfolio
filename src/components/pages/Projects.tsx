@@ -2,7 +2,6 @@ import ProjectCard from "../projects/ProjectCard";
 import capstone from '../../assets/capstone.png'
 import bbd from '../../assets/bbd.png';
 import port from '../../assets/portweb.png'
-import lovelink from '../../assets/love_link.png';
 
 export default function Projects() {
   return (
@@ -31,12 +30,7 @@ export default function Projects() {
           caption={"• The official BBD cafe website.\n• Features include home page, menu, cart for shopping menu products and email order confirmation. \nTo be officially launched."}
           status={["Completed"]}
           techstack={[]} />
-        <ProjectCard src={lovelink} index={3}
-          title={"Love Link"}
-          caption={"• A singles facilitator web application designed for singles to find love from attending in-person group dates/events. \n• Features include user/host dashboards, events search and compatibility quizzes.\nMade as part of DevSoc's 25T2 Training Program."}
-          status={["WIP"]}
-          techstack={["React", "TypeScript", "TailwindCSS"]} />
-        <ProjectCard src={port} index={4}
+        <ProjectCard src={port} index={3}
           title={"Website Portfolio"}
           caption={"• The mobile-responsive website you are currently viewing! Made to showcase my projects & work.\n• Further improvements to be worked on: light/dark mode, animations, creatives (blogs), missing projects, more mobile responsiveness."}
           status={["WIP"]}
